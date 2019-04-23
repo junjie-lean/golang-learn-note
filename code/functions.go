@@ -11,11 +11,17 @@ func main() {
 	// fmt.Printf("the last Result is %d,\n", lastResult);
 	// fmt.Printf("the last Result is %d,\n", addan)
 
-	minist := getMin(4, 2, 3, 1, 44)
+	// minist := getMin(4, 2, 3, 5, 44)
 
-	fmt.Printf("最小的数是%d", minist)
+	// fmt.Printf("最小的数是%d \n", minist)
+
+	for i := 0; i < 10; i++ {
+		fmt.Printf("%d\n", i) //0 - 9
+		// defer fmt.Printf("%d\n", i)   //9 - 0  使用defer的话，类似于栈调用
+	}
 
 }
+
 func callFunc(num int, res bool, a bool) int {
 	c := num
 	if res {
